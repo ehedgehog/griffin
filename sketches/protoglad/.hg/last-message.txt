@@ -1,0 +1,1 @@
+Extracted Config type and constructors to own file.

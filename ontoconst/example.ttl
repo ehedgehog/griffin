@@ -1,0 +1,1343 @@
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+      <http://purl.org/linked-data/api/vocab#label>
+              "lat" .
+
+<http://education.data.gov.uk/def/school/openDate>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#date> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "openDate" .
+
+<http://education.data.gov.uk/def/school/EICLSU>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#boolean> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "EICLSU" .
+
+<http://education.data.gov.uk/def/school/highDayFee>
+      <http://purl.org/linked-data/api/vocab#label>
+              "highDayFee" .
+
+<http://education.data.gov.uk/def/school/admissionsPolicy>
+      <http://purl.org/linked-data/api/vocab#label>
+              "admissionsPolicy" .
+
+<http://education.data.gov.uk/def/school/dateofLastISIVisit>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#date> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "dateofLastISIVisit" .
+
+<http://education.data.gov.uk/def/school/region>
+      <http://purl.org/linked-data/api/vocab#label>
+              "region" .
+
+<http://education.data.gov.uk/def/school/nextHMIorISIvisit>
+      <http://purl.org/linked-data/api/vocab#label>
+              "nextHMIorISIvisit" .
+
+<http://education.data.gov.uk/def/school/teenageMotherPlaces>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "teenageMotherPlaces" .
+
+<http://education.data.gov.uk/def/school/girls18>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "girls18" .
+
+<http://education.data.gov.uk/def/school/boys10>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "boys10" .
+
+<http://education.data.gov.uk/def/school/PFI>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#boolean> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "PFI" .
+
+<http://education.data.gov.uk/def/school/HP_Leading_Option>
+      <http://purl.org/linked-data/api/vocab#label>
+              "HP_Leading_Option" .
+
+<http://education.data.gov.uk/def/school/TypeOfEstablishment_City_Technology_College>
+      <http://purl.org/linked-data/api/vocab#label>
+              "Type_City_Technology_College" .
+
+<http://education.data.gov.uk/def/school/TypeOfEstablishment_Foundation_Special_School>
+      <http://purl.org/linked-data/api/vocab#label>
+              "Type_Foundation_Special_School" .
+
+<http://education.data.gov.uk/def/school/parliamentaryConstituency>
+      <http://purl.org/linked-data/api/vocab#label>
+              "parliamentaryConstituency" .
+
+<http://services.data.gov.uk/education/api#viewerMedium>
+      a       <http://purl.org/linked-data/api/vocab#Viewer> ;
+      <http://purl.org/linked-data/api/vocab#name>
+              "medium" ;
+      <http://purl.org/linked-data/api/vocab#properties>
+              "type.nurseryProvision" , "type.label" ;
+      <http://purl.org/linked-data/api/vocab#property>
+              <http://education.data.gov.uk/def/school/districtAdministrative> , <http://www.w3.org/2003/01/geo/wgs84_pos#long> , <http://www.w3.org/2003/01/geo/wgs84_pos#lat> , <http://education.data.gov.uk/def/school/administrativeWard> , <http://education.data.gov.uk/def/school/parliamentaryConstituency> , <http://education.data.gov.uk/def/school/schoolCapacity> , <http://education.data.gov.uk/def/school/typeOfEstablishment> , <http://education.data.gov.uk/def/school/phaseOfEducation> , <http://education.data.gov.uk/def/school/nurseryProvision> , rdfs:label , <http://education.data.gov.uk/def/school/establishmentStatus> .
+
+<http://education.data.gov.uk/def/school/TypeOfEstablishment_European_Schools>
+      <http://purl.org/linked-data/api/vocab#label>
+              "Type_European_Schools" .
+
+<http://data.ordnancesurvey.co.uk/ontology/spatialrelations/northing>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "northing" .
+
+<http://services.data.gov.uk/education/api#viewerShort>
+      a       <http://purl.org/linked-data/api/vocab#Viewer> ;
+      <http://purl.org/linked-data/api/vocab#name>
+              "short" ;
+      <http://purl.org/linked-data/api/vocab#property>
+              <http://education.data.gov.uk/def/school/typeOfEstablishment> , rdf:type , rdfs:label , <http://education.data.gov.uk/def/school/establishmentStatus> .
+
+<http://education.data.gov.uk/def/school/association>
+      <http://purl.org/linked-data/api/vocab#label>
+              "association" .
+
+<http://education.data.gov.uk/def/school/LSOA>
+      <http://purl.org/linked-data/api/vocab#label>
+              "LSOA" .
+
+<http://education.data.gov.uk/def/school/lastChangedDate>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#date> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "lastChangedDate" .
+
+<http://education.data.gov.uk/def/school/administrativeWard>
+      <http://purl.org/linked-data/api/vocab#label>
+              "administrativeWard" .
+
+<http://education.data.gov.uk/def/school/boys9>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "boys9" .
+
+<http://education.data.gov.uk/def/school/title>
+      <http://purl.org/linked-data/api/vocab#label>
+              "title" .
+
+<http://education.data.gov.uk/def/school/trust>
+      <http://purl.org/linked-data/api/vocab#label>
+              "trust" .
+
+<http://education.data.gov.uk/def/school/UKPRN>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "UKPRN" .
+
+<http://education.data.gov.uk/def/school/totalHoursPerWeekPTStaff>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "totalHoursPerWeekPTStaff" .
+
+<http://education.data.gov.uk/def/school/mainSpecialism>
+      <http://purl.org/linked-data/api/vocab#label>
+              "mainSpecialism" .
+
+<http://education.data.gov.uk/def/school/Foundation>
+      <http://purl.org/linked-data/api/vocab#label>
+              "Foundation" .
+
+<http://education.data.gov.uk/def/school/districtAdministrative>
+      <http://purl.org/linked-data/api/vocab#label>
+              "districtAdministrative" .
+
+<http://education.data.gov.uk/def/school/girls16>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "girls16" .
+
+rdf:type
+      rdfs:range rdfs:Class ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "type" .
+
+<http://education.data.gov.uk/def/school/phaseOfEducation>
+      <http://purl.org/linked-data/api/vocab#label>
+              "phaseOfEducation" .
+
+<http://education.data.gov.uk/def/school/town>
+      <http://purl.org/linked-data/api/vocab#label>
+              "town" .
+
+<http://education.data.gov.uk/def/school/EICGroup>
+      <http://purl.org/linked-data/api/vocab#label>
+              "EICGroup" .
+
+<http://education.data.gov.uk/def/school/LLSC>
+      <http://purl.org/linked-data/api/vocab#label>
+              "LLSC" .
+
+<http://education.data.gov.uk/def/school/approvedNumberBoardersSpecial>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "approvedNumberBoardersSpecial" .
+
+<http://education.data.gov.uk/def/school/IndependentSchoolType_Steiner>
+      <http://purl.org/linked-data/api/vocab#label>
+              "IndependentSchoolType_Steiner" .
+
+<http://education.data.gov.uk/def/school/TypeOfEstablishment_Other_Independent_Special_School>
+      <http://purl.org/linked-data/api/vocab#label>
+              "Type_Other_Independent_Special_School" .
+
+<http://education.data.gov.uk/def/school/boarders>
+      <http://purl.org/linked-data/api/vocab#label>
+              "boarders" .
+
+<http://education.data.gov.uk/def/school/TypeOfEstablishment_Special_College>
+      <http://purl.org/linked-data/api/vocab#label>
+              "Type_Special_College" .
+
+<http://education.data.gov.uk/def/school/totalGirlBoarders>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "totalGirlBoarders" .
+
+<http://education.data.gov.uk/def/school/websiteAddress>
+      <http://purl.org/linked-data/api/vocab#label>
+              "websiteAddress" .
+
+<http://services.data.gov.uk/education/api#api>
+      a       <http://purl.org/linked-data/api/vocab#API> ;
+      rdfs:comment "An API around sparql-provided education data." ;
+      rdfs:label "Edubase API" ;
+      <http://purl.org/linked-data/api/vocab#defaultPageSize>
+              "10" ;
+      <http://purl.org/linked-data/api/vocab#endpoint>
+              <http://services.data.gov.uk/education/api#school-by-id> , <http://services.data.gov.uk/education/api#schoolsPrimaryDistrict> , <http://services.data.gov.uk/education/api#schoolsSecondaryDistrict> , <http://services.data.gov.uk/education/api#showing-uri-template-with-query-params> , <http://services.data.gov.uk/education/api#school-with-redirect> , <http://services.data.gov.uk/education/api#schoolsPrimary> , <http://services.data.gov.uk/education/api#schoolsSecondary> , <http://services.data.gov.uk/education/api#schools> ;
+      <http://purl.org/linked-data/api/vocab#formatter>
+              [ a       <http://purl.org/linked-data/api/vocab#HtmlFormatter> ;
+                <http://purl.org/linked-data/api/vocab#mimeType>
+                        "text/htmlx" ;
+                <http://purl.org/linked-data/api/vocab#name>
+                        "plainhtml" ;
+                <http://www.epimorphics.com/vocabularies/lda#className>
+                        "com.epimorphics.lda.demo.Demo_HTML_RendererFactory"
+              ] ;
+      <http://purl.org/linked-data/api/vocab#formatter>
+              [ a       <http://purl.org/linked-data/api/vocab#XsltFormatter> ;
+                <http://purl.org/linked-data/api/vocab#mimeType>
+                        "text/html; charset=utf-8" ;
+                <http://purl.org/linked-data/api/vocab#name>
+                        "html" ;
+                <http://purl.org/linked-data/api/vocab#stylesheet>
+                        "xsltsheets/result-osm.xsl" ;
+                <http://www.epimorphics.com/vocabularies/lda#metadataOptions>
+                        "bindings,formats,versions,execution"
+              ] ;
+      <http://purl.org/linked-data/api/vocab#maxPageSize>
+              "50" ;
+      <http://purl.org/linked-data/api/vocab#sparqlEndpoint>
+              <http://services.data.gov.uk/education/sparql> ;
+      <http://purl.org/linked-data/api/vocab#variable>
+              [ <http://purl.org/linked-data/api/vocab#name>
+                        "webapp" ;
+                <http://purl.org/linked-data/api/vocab#value>
+                        "/elda"
+              ] ;
+      <http://purl.org/linked-data/api/vocab#variable>
+              [ <http://purl.org/linked-data/api/vocab#name>
+                        "_supress_media_type" ;
+                <http://purl.org/linked-data/api/vocab#value>
+                        "no"
+              ] ;
+      <http://purl.org/linked-data/api/vocab#variable>
+              [ <http://purl.org/linked-data/api/vocab#name>
+                        "_strip_has" ;
+                <http://purl.org/linked-data/api/vocab#value>
+                        "yes"
+              ] ;
+      <http://purl.org/linked-data/api/vocab#variable>
+              [ <http://purl.org/linked-data/api/vocab#name>
+                        "_suppress_ipto" ;
+                <http://purl.org/linked-data/api/vocab#value>
+                        "no"
+              ] ;
+      <http://purl.org/linked-data/api/vocab#variable>
+              [ <http://purl.org/linked-data/api/vocab#name>
+                        "activeImageBase" ;
+                <http://purl.org/linked-data/api/vocab#value>
+                        "/elda/images/green/16x16"
+              ] ;
+      <http://purl.org/linked-data/api/vocab#variable>
+              [ <http://purl.org/linked-data/api/vocab#name>
+                        "_resourceRoot" ;
+                <http://purl.org/linked-data/api/vocab#value>
+                        "/elda/"
+              ] ;
+      <http://purl.org/linked-data/api/vocab#variable>
+              [ <http://purl.org/linked-data/api/vocab#name>
+                        "inactiveImageBase" ;
+                <http://purl.org/linked-data/api/vocab#value>
+                        "/elda/images/grey/16x16"
+              ] ;
+      <http://xmlns.com/foaf/0.1/primaryTopic>
+              <http://education.data.gov.uk/def/school/theUkSchoolsSystemWhichNeedsAProperURI> .
+
+<http://education.data.gov.uk/def/school/boys19plus>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "boys19plus" .
+
+<http://education.data.gov.uk/def/school/dateofLastFPVisit>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#date> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "dateofLastFPVisit" .
+
+<http://www.w3.org/2003/01/geo/wgs84_pos#long>
+      <http://purl.org/linked-data/api/vocab#label>
+              "long" .
+
+<http://services.data.gov.uk/education/api#schoolsPrimaryDistrict>
+      a       <http://purl.org/linked-data/api/vocab#ListEndpoint> ;
+      <http://purl.org/linked-data/api/vocab#defaultViewer>
+              <http://services.data.gov.uk/education/api#viewerShort> ;
+      <http://purl.org/linked-data/api/vocab#selector>
+              [ <http://purl.org/linked-data/api/vocab#filter>
+                        "name-districtAdministrative={district}" ;
+                <http://purl.org/linked-data/api/vocab#parent>
+                        <http://services.data.gov.uk/education/api#schoolsPrimarySelector>
+              ] ;
+      <http://purl.org/linked-data/api/vocab#uriTemplate>
+              "/education/schools/primary/district/{district}" .
+
+<http://education.data.gov.uk/def/school/hasTeenageMothers>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#boolean> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "hasTeenageMothers" .
+
+<http://education.data.gov.uk/def/school/girls17>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "girls17" .
+
+<http://education.data.gov.uk/def/school/PTGirls3>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "PTGirls3" .
+
+<http://education.data.gov.uk/def/school/PTBoys4c>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "PTBoys4c" .
+
+<http://education.data.gov.uk/def/school/dateofLastOfstedVisit>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#date> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "dateofLastOfstedVisit" .
+
+<http://education.data.gov.uk/def/school/secondarySpecialism>
+      <http://purl.org/linked-data/api/vocab#label>
+              "secondarySpecialism" .
+
+<http://education.data.gov.uk/def/school/PTGirls4c>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "PTGirls4c" .
+
+<http://education.data.gov.uk/def/school/PTGirls2andUnder>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "PTGirls2andUnder" .
+
+<http://education.data.gov.uk/def/school/burnhamReport>
+      <http://purl.org/linked-data/api/vocab#label>
+              "burnhamReport" .
+
+<http://education.data.gov.uk/def/school/hasGOR>
+      <http://purl.org/linked-data/api/vocab#label>
+              "hasGOR" .
+
+<http://education.data.gov.uk/def/school/boys14>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "boys14" .
+
+<http://education.data.gov.uk/def/school/address1>
+      <http://purl.org/linked-data/api/vocab#label>
+              "address1" .
+
+<http://education.data.gov.uk/def/school/boys6>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "boys6" .
+
+<http://education.data.gov.uk/def/school/beacon>
+      <http://purl.org/linked-data/api/vocab#label>
+              "beacon" .
+
+<http://education.data.gov.uk/def/school/vcard>
+      <http://purl.org/linked-data/api/vocab#label>
+              "vcard" .
+
+<http://education.data.gov.uk/def/school/censusRecord>
+      <http://purl.org/linked-data/api/vocab#label>
+              "censusRecord" .
+
+<http://education.data.gov.uk/def/school/address>
+      <http://purl.org/linked-data/api/vocab#label>
+              "address" .
+
+<http://education.data.gov.uk/def/school/TypeOfEstablishment_Community_School>
+      <http://purl.org/linked-data/api/vocab#label>
+              "Type_Community_School" .
+
+<http://education.data.gov.uk/def/school/totalPupilsInPublicCare>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "totalPupilsInPublicCare" .
+
+<http://data.ordnancesurvey.co.uk/ontology/spatialrelations/easting>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "easting" .
+
+<http://education.data.gov.uk/def/school/PTGirls4b>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "PTGirls4b" .
+
+<http://education.data.gov.uk/def/school/numberOfPupils>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "numberOfPupils" .
+
+<http://education.data.gov.uk/def/school/TypeOfEstablishment_Welsh_Establishment>
+      <http://purl.org/linked-data/api/vocab#label>
+              "Type_Welsh_Establishment" .
+
+<http://education.data.gov.uk/def/school/placesPRU>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "placesPRU" .
+
+<http://education.data.gov.uk/def/school/TypeOfEstablishment_Further_Education>
+      <http://purl.org/linked-data/api/vocab#label>
+              "Type_Further_Education" .
+
+<http://education.data.gov.uk/def/school/furtherEducationType>
+      <http://purl.org/linked-data/api/vocab#label>
+              "furtherEducationType" .
+
+<http://education.data.gov.uk/def/school/girls19plus>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "girls19plus" .
+
+<http://education.data.gov.uk/def/school/boys13>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "boys13" .
+
+<http://education.data.gov.uk/def/school/boys5>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "boys5" .
+
+<http://education.data.gov.uk/def/school/address2>
+      <http://purl.org/linked-data/api/vocab#label>
+              "address2" .
+
+<http://services.data.gov.uk/education/api#showing-uri-template-with-query-params>
+      a       <http://purl.org/linked-data/api/vocab#ListEndpoint> ;
+      <http://purl.org/linked-data/api/vocab#selector>
+              [ <http://purl.org/linked-data/api/vocab#filter>
+                        "type={uri}"
+              ] ;
+      <http://purl.org/linked-data/api/vocab#uriTemplate>
+              "/education/example?thing={uri}" ;
+      <http://purl.org/linked-data/api/vocab#viewer>
+              <http://purl.org/linked-data/api/vocab#describeViewer> .
+
+<http://education.data.gov.uk/def/school/ofstedSpecialMeasures>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#boolean> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "ofstedSpecialMeasures" .
+
+<http://education.data.gov.uk/def/school/boys4a>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "boys4a" .
+
+<http://education.data.gov.uk/def/school/compSchoolAge>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "compSchoolAge" .
+
+<http://education.data.gov.uk/def/school/PTBoys4a>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "PTBoys4a" .
+
+<http://education.data.gov.uk/def/school/marketingOptInOut>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#boolean> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "marketingOptInOut" .
+
+<http://education.data.gov.uk/def/school/PTGirls4a>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "PTGirls4a" .
+
+<http://education.data.gov.uk/def/school/EIC>
+      <http://purl.org/linked-data/api/vocab#label>
+              "EIC" .
+
+<http://education.data.gov.uk/def/school/nurseryProvision>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#boolean> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "nurseryProvision" .
+
+<http://education.data.gov.uk/def/school/totalPupilsFullTime>
+      <http://purl.org/linked-data/api/vocab#label>
+              "totalPupilsFullTime" .
+
+<http://education.data.gov.uk/def/school/censusAreaStatisticWard>
+      <http://purl.org/linked-data/api/vocab#label>
+              "censusAreaStatisticWard" .
+
+<http://education.data.gov.uk/def/school/specialPupils>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "specialPupils" .
+
+<http://education.data.gov.uk/def/school/address3>
+      <http://purl.org/linked-data/api/vocab#label>
+              "address3" .
+
+<http://education.data.gov.uk/def/school/boys12>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "boys12" .
+
+<http://services.data.gov.uk/education/api#schoolsSecondaryDistrict>
+      a       <http://purl.org/linked-data/api/vocab#ListEndpoint> ;
+      <http://purl.org/linked-data/api/vocab#defaultViewer>
+              <http://services.data.gov.uk/education/api#viewerShort> ;
+      <http://purl.org/linked-data/api/vocab#selector>
+              [ <http://purl.org/linked-data/api/vocab#filter>
+                        "name-districtAdministrative={district}" ;
+                <http://purl.org/linked-data/api/vocab#parent>
+                        <http://services.data.gov.uk/education/api#schoolsSecondarySelector>
+              ] ;
+      <http://purl.org/linked-data/api/vocab#uriTemplate>
+              "/education/schools/secondary/district/{district}" .
+
+<http://education.data.gov.uk/def/school/notes>
+      <http://purl.org/linked-data/api/vocab#label>
+              "notes" .
+
+<http://education.data.gov.uk/def/school/boys4b>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "boys4b" .
+
+<http://education.data.gov.uk/def/school/boys8>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "boys8" .
+
+<http://education.data.gov.uk/def/school/statutoryHighAge>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "statutoryHighAge" .
+
+<http://education.data.gov.uk/def/school/TypeOfEstablishment_Voluntary_Controlled_School>
+      <http://purl.org/linked-data/api/vocab#label>
+              "Type_Voluntary_Controlled_School" .
+
+<http://education.data.gov.uk/def/school/postcode>
+      <http://purl.org/linked-data/api/vocab#label>
+              "postcode" .
+
+<http://education.data.gov.uk/def/school/actionFP>
+      <http://purl.org/linked-data/api/vocab#label>
+              "actionFP" .
+
+<http://education.data.gov.uk/def/school/closeDate>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#date> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "closeDate" .
+
+<http://education.data.gov.uk/def/school/leadershipIncentiveGrant>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#boolean> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "leadershipIncentiveGrant" .
+
+<http://education.data.gov.uk/def/school/PTBoys4b>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "PTBoys4b" .
+
+<http://education.data.gov.uk/def/school/EICCLS>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#boolean> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "EICCLS" .
+
+<http://education.data.gov.uk/def/school/totalBoyBoarders>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "totalBoyBoarders" .
+
+<http://education.data.gov.uk/def/school/totalStaffPartTime>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "totalStaffPartTime" .
+
+<http://education.data.gov.uk/def/school/TypeOfEstablishment_Sixth_Form_Centres>
+      <http://purl.org/linked-data/api/vocab#label>
+              "Type_Sixth_Form_Centres" .
+
+<http://education.data.gov.uk/def/school/registeredEY>
+      <http://purl.org/linked-data/api/vocab#label>
+              "registeredEY" .
+
+<http://education.data.gov.uk/def/school/admingeo>
+      <http://purl.org/linked-data/api/vocab#label>
+              "admingeo" .
+
+<http://education.data.gov.uk/def/school/boys11>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "boys11" .
+
+<http://education.data.gov.uk/def/school/lowBoardFee>
+      <http://purl.org/linked-data/api/vocab#label>
+              "lowBoardFee" .
+
+<http://education.data.gov.uk/def/school/FTProv>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#boolean> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "FTProv" .
+
+<http://education.data.gov.uk/def/school/boys7>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "boys7" .
+
+<http://services.data.gov.uk/education/api#viewerNone>
+      a       <http://purl.org/linked-data/api/vocab#Viewer> ;
+      <http://purl.org/linked-data/api/vocab#name>
+              "none" .
+
+<http://education.data.gov.uk/def/school/hasCCF>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#boolean> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "hasCCF" .
+
+<http://education.data.gov.uk/def/school/boys4c>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "boys4c" .
+
+<http://services.data.gov.uk/education/api#schoolsPrimary>
+      a       <http://purl.org/linked-data/api/vocab#ListEndpoint> ;
+      <http://purl.org/linked-data/api/vocab#defaultViewer>
+              <http://services.data.gov.uk/education/api#viewerShort> ;
+      <http://purl.org/linked-data/api/vocab#selector>
+              <http://services.data.gov.uk/education/api#schoolsPrimarySelector> ;
+      <http://purl.org/linked-data/api/vocab#uriTemplate>
+              "/education/schools/primary" .
+
+<http://education.data.gov.uk/def/school/TypeOfEstablishment_Other_Independent_School>
+      <http://purl.org/linked-data/api/vocab#label>
+              "Type_Other_Independent_School" .
+
+<http://education.data.gov.uk/def/school/boys2>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "boys2" .
+
+<http://education.data.gov.uk/def/school/establishmentNumber>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "establishmentNumber" .
+
+<http://education.data.gov.uk/def/school/dateofLastWelfareVisit>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#date> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "dateofLastWelfareVisit" .
+
+<http://education.data.gov.uk/def/school/gender>
+      <http://purl.org/linked-data/api/vocab#label>
+              "gender" .
+
+<http://education.data.gov.uk/def/school/IndependentSchoolType_Music>
+      <http://purl.org/linked-data/api/vocab#label>
+              "IndependentSchoolType_Music" .
+
+<http://education.data.gov.uk/def/school/girls10>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "girls10" .
+
+<http://education.data.gov.uk/def/school/burnhamGroup>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "burnhamGroup" .
+
+<http://services.data.gov.uk/education/api#school-with-redirect>
+      a       <http://purl.org/linked-data/api/vocab#ListEndpoint> ;
+      <http://purl.org/linked-data/api/vocab#itemTemplate>
+              "http://education.data.gov.uk/id/school/{id}" ;
+      <http://purl.org/linked-data/api/vocab#uriTemplate>
+              "/redirected/education/id/schoolé/{id}" ;
+      <http://purl.org/linked-data/api/vocab#viewer>
+              <http://purl.org/linked-data/api/vocab#describeViewer> .
+
+<http://education.data.gov.uk/def/school/girls2andUnder>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "girls2andUnder" .
+
+<http://education.data.gov.uk/def/school/TrainingSchool>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#boolean> .
+
+<http://purl.org/dc/elements/1.1/date>
+      <http://purl.org/linked-data/api/vocab#label>
+              "date" .
+
+<http://education.data.gov.uk/def/school/ASCHighestAge>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "ASCHighestAge" .
+
+<http://education.data.gov.uk/def/school/boys18>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "boys18" .
+
+<http://education.data.gov.uk/def/school/totalPupilsPartTime>
+      <http://purl.org/linked-data/api/vocab#label>
+              "totalPupilsPartTime" .
+
+<http://education.data.gov.uk/def/school/FSM>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "FSM" .
+
+<http://education.data.gov.uk/def/school/TypeOfEstablishment_Higher_Education_Institutions>
+      <http://purl.org/linked-data/api/vocab#label>
+              "Type_Higher_Education_Institutions" .
+
+<http://education.data.gov.uk/def/school/girls5>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "girls5" .
+
+<http://education.data.gov.uk/def/school/uniqueReferenceNumber>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "uniqueReferenceNumber" .
+
+<http://education.data.gov.uk/def/school/IndependentSchoolType_Unusual>
+      <http://purl.org/linked-data/api/vocab#label>
+              "IndependentSchoolType_Unusual" .
+
+<http://services.data.gov.uk/education/api#school-by-id>
+      a       <http://purl.org/linked-data/api/vocab#ItemEndpoint> ;
+      <http://purl.org/linked-data/api/vocab#exampleRequestPath>
+              "/education/id/school/100869" ;
+      <http://purl.org/linked-data/api/vocab#selector>
+              [ <http://purl.org/linked-data/api/vocab#filter>
+                        "uniqueReferenceNumber={id}"
+              ] ;
+      <http://purl.org/linked-data/api/vocab#uriTemplate>
+              "/education/id/school/{id}" ;
+      <http://purl.org/linked-data/api/vocab#viewer>
+              <http://purl.org/linked-data/api/vocab#describeViewer> .
+
+<http://education.data.gov.uk/def/school/EBD>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#boolean> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "EBD" .
+
+<http://education.data.gov.uk/def/school/edByOther>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#boolean> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "edByOther" .
+
+<http://education.data.gov.uk/def/school/girls3>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "girls3" .
+
+<http://education.data.gov.uk/def/school/girls11>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "girls11" .
+
+<http://education.data.gov.uk/def/school/typeOfEstablishment>
+      <http://purl.org/linked-data/api/vocab#label>
+              "typeOfEstablishment" .
+
+<http://education.data.gov.uk/def/school/TypeOfEstablishment_LA_Nursery_School>
+      <http://purl.org/linked-data/api/vocab#label>
+              "Type_LA_Nursery_School" .
+
+<http://education.data.gov.uk/def/school/establishmentName>
+      <http://purl.org/linked-data/api/vocab#label>
+              "establishmentName" .
+
+<http://education.data.gov.uk/def/school/eaz>
+      <http://purl.org/linked-data/api/vocab#label>
+              "eaz" .
+
+<http://education.data.gov.uk/def/school/IndependentSchoolType_Tutorial>
+      <http://purl.org/linked-data/api/vocab#label>
+              "IndependentSchoolType_Tutorial" .
+
+<http://education.data.gov.uk/def/school/ASCLowestAge>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "ASCLowestAge" .
+
+<http://education.data.gov.uk/def/school/sen>
+      <http://purl.org/linked-data/api/vocab#label>
+              "sen" .
+
+<http://education.data.gov.uk/def/school/FSMPercentage>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "FSMPercentage" .
+
+<http://education.data.gov.uk/def/school/SENStat>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "SENStat" .
+
+<http://education.data.gov.uk/def/school/boys17>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "boys17" .
+
+<http://education.data.gov.uk/def/school/localAuthority>
+      <http://purl.org/linked-data/api/vocab#label>
+              "localAuthority" .
+
+<http://education.data.gov.uk/def/school/IndependentSchoolType_Montessori_School>
+      <http://purl.org/linked-data/api/vocab#label>
+              "IndependentSchoolType_Montessori_School" .
+
+<http://education.data.gov.uk/def/school/inspectorate>
+      <http://purl.org/linked-data/api/vocab#label>
+              "inspectorate" .
+
+<http://education.data.gov.uk/def/school/Trust>
+      <http://purl.org/linked-data/api/vocab#label>
+              "Trust" .
+
+<http://education.data.gov.uk/def/school/previousLA>
+      <http://purl.org/linked-data/api/vocab#label>
+              "previousLA" .
+
+<http://education.data.gov.uk/def/school/accomChange>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#boolean> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "accomChange" .
+
+<http://education.data.gov.uk/def/school/TypeOfEstablishment_Playing_for_Success_Centres>
+      <http://purl.org/linked-data/api/vocab#label>
+              "Type_Playing_for_Success_Centres" .
+
+<http://education.data.gov.uk/def/school/boys16>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "boys16" .
+
+<http://education.data.gov.uk/def/school/CensusRecord>
+      <http://purl.org/linked-data/api/vocab#label>
+              "CensusRecord" .
+
+<http://education.data.gov.uk/def/school/specialClasses>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#boolean> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "specialClasses" .
+
+<http://education.data.gov.uk/def/school/lowDayFee>
+      <http://purl.org/linked-data/api/vocab#label>
+              "lowDayFee" .
+
+<http://education.data.gov.uk/def/school/girls7>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "girls7" .
+
+<http://education.data.gov.uk/def/school/TypeOfEstablishment_Independent_School_Approved_for_SEN_Pupils>
+      <http://purl.org/linked-data/api/vocab#label>
+              "Type_Independent_School_Approved_for_SEN_Pupils" .
+
+<http://education.data.gov.uk/def/school/reasonEstablishmentOpened>
+      <http://purl.org/linked-data/api/vocab#label>
+              "reasonEstablishmentOpened" .
+
+<http://education.data.gov.uk/def/school/boys3>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "boys3" .
+
+<http://education.data.gov.uk/def/school/investorInPeople>
+      <http://purl.org/linked-data/api/vocab#label>
+              "investorInPeople" .
+
+<http://education.data.gov.uk/def/school/statutoryLowAge>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "statutoryLowAge" .
+
+<http://education.data.gov.uk/def/school/eiCActionZone>
+      <http://purl.org/linked-data/api/vocab#label>
+              "eiCActionZone" .
+
+<http://services.data.gov.uk/education/api#schools>
+      a       <http://purl.org/linked-data/api/vocab#ListEndpoint> ;
+      rdfs:comment "This endpoint displays any kind of school." ;
+      <http://purl.org/linked-data/api/vocab#defaultViewer>
+              <http://services.data.gov.uk/education/api#viewerMedium> ;
+      <http://purl.org/linked-data/api/vocab#selector>
+              [ <http://purl.org/linked-data/api/vocab#filter>
+                        "type=School"
+              ] ;
+      <http://purl.org/linked-data/api/vocab#uriTemplate>
+              "/education/schools" ;
+      <http://purl.org/linked-data/api/vocab#viewer>
+              <http://services.data.gov.uk/education/api#viewerNone> , <http://services.data.gov.uk/education/api#viewerMedium> , <http://services.data.gov.uk/education/api#viewerShort> ;
+      <http://purl.org/linked-data/api/vocab#viewer>
+              [ <http://purl.org/linked-data/api/vocab#name>
+                        "geo" ;
+                <http://purl.org/linked-data/api/vocab#property>
+                        <http://www.w3.org/2003/01/geo/wgs84_pos#long> , <http://www.w3.org/2003/01/geo/wgs84_pos#lat> , rdf:type , rdfs:label , <http://education.data.gov.uk/def/school/establishmentStatus>
+              ] .
+
+<http://education.data.gov.uk/def/school/SCUpreferredemail>
+      <http://purl.org/linked-data/api/vocab#label>
+              "SCUpreferredemail" .
+
+<http://education.data.gov.uk/def/school/freshStart>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#boolean> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "freshStart" .
+
+<http://education.data.gov.uk/def/school/SENPRU>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#boolean> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "SENPRU" .
+
+<http://education.data.gov.uk/def/school/boys15>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "boys15" .
+
+<http://education.data.gov.uk/def/school/dateofLastBridgeVisit>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#date> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "dateofLastBridgeVisit" .
+
+<http://education.data.gov.uk/def/school/TypeOfEstablishment_Voluntary_Aided_School>
+      <http://purl.org/linked-data/api/vocab#label>
+              "Type_Voluntary_Aided_School" .
+
+<http://education.data.gov.uk/def/school/previousEstablishmentNumber>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "previousEstablishmentNumber" .
+
+<http://education.data.gov.uk/def/school/TypeOfEstablishment_Community_Special_School>
+      <http://purl.org/linked-data/api/vocab#label>
+              "Type_Community_Special_School" .
+
+<http://education.data.gov.uk/def/school/IndependentSchoolType_Foreign>
+      <http://purl.org/linked-data/api/vocab#label>
+              "IndependentSchoolType_Foreign" .
+
+<http://education.data.gov.uk/def/school/TypeOfEstablishment_Secure_Units>
+      <http://purl.org/linked-data/api/vocab#label>
+              "Type_Secure_Units" .
+
+<http://education.data.gov.uk/def/school/girls6>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "girls6" .
+
+<http://education.data.gov.uk/def/school/SCUAlternativeEmail>
+      <http://purl.org/linked-data/api/vocab#label>
+              "SCUAlternativeEmail" .
+
+<http://services.data.gov.uk/education/sparql>
+      <http://www.epimorphics.com/vocabularies/lda#supportsNestedSelect>
+              "false" .
+
+<http://education.data.gov.uk/def/school/officialSixthForm>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#boolean> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "officialSixthForm" .
+
+<http://education.data.gov.uk/def/school/independentSchoolType>
+      <http://purl.org/linked-data/api/vocab#label>
+              "independentSchoolType" .
+
+<http://education.data.gov.uk/def/school/TypeOfEstablishment_EY_Setting>
+      <http://purl.org/linked-data/api/vocab#label>
+              "Type_EY_Setting" .
+
+<http://education.data.gov.uk/def/school/TypeOfEstablishment_Legacy_types>
+      <http://purl.org/linked-data/api/vocab#label>
+              "Type_Legacy_types" .
+
+<http://education.data.gov.uk/def/school/TypeOfEstablishment_Institution_funded_by_other_Government_Department>
+      <http://purl.org/linked-data/api/vocab#label>
+              "Type_Institution_funded_by_other_Government_Department" .
+
+<http://education.data.gov.uk/def/school/FEHEIdentifier>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "FEHEIdentifier" .
+
+rdfs:label
+      a       rdf:Property ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "label" .
+
+<http://education.data.gov.uk/def/school/girls14>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "girls14" .
+
+<http://education.data.gov.uk/def/school/BoardingEstablishment>
+      <http://purl.org/linked-data/api/vocab#label>
+              "BoardingEstablishment" .
+
+<http://education.data.gov.uk/def/school/establishmentStatus>
+      <http://purl.org/linked-data/api/vocab#label>
+              "establishmentStatus" .
+
+<http://education.data.gov.uk/def/school/actionGEN>
+      <http://purl.org/linked-data/api/vocab#label>
+              "actionGEN" .
+
+<http://education.data.gov.uk/def/school/ofstedLastInsp>
+      <http://purl.org/linked-data/api/vocab#label>
+              "ofstedLastInsp" .
+
+<http://education.data.gov.uk/def/school/superannuationCategory>
+      <http://purl.org/linked-data/api/vocab#label>
+              "superannuationCategory" .
+
+<http://education.data.gov.uk/def/school/TypeOfEstablishment_Foundation_School>
+      <http://purl.org/linked-data/api/vocab#label>
+              "Type_Foundation_School" .
+
+<http://education.data.gov.uk/def/school/girls9>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "girls9" .
+
+<http://education.data.gov.uk/def/school/highBoardFee>
+      <http://purl.org/linked-data/api/vocab#label>
+              "highBoardFee" .
+
+<http://education.data.gov.uk/def/school/totalStaffFullTime>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "totalStaffFullTime" .
+
+<http://education.data.gov.uk/def/school/TypeOfEstablishment_Pupil_Referral_Unit>
+      <http://purl.org/linked-data/api/vocab#label>
+              "Type_Pupil_Referral_Unit" .
+
+<http://education.data.gov.uk/def/school/TypeOfEstablishment_Miscellaneous>
+      <http://purl.org/linked-data/api/vocab#label>
+              "Type_Miscellaneous" .
+
+<http://education.data.gov.uk/def/school/girls15>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "girls15" .
+
+<http://education.data.gov.uk/def/school/TypeOfEstablishment_Service_Childrens_Education>
+      <http://purl.org/linked-data/api/vocab#label>
+              "Type_Service_Childrens_Education" .
+
+<http://education.data.gov.uk/def/school/PTBoys3>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "PTBoys3" .
+
+<http://education.data.gov.uk/def/school/girls8>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "girls8" .
+
+<http://education.data.gov.uk/def/school/pupilTeacherRatio>
+      <http://purl.org/linked-data/api/vocab#label>
+              "pupilTeacherRatio" .
+
+<http://education.data.gov.uk/def/school/PTBoys2andUnder>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "PTBoys2andUnder" .
+
+<http://education.data.gov.uk/def/school/urbanRural>
+      <http://purl.org/linked-data/api/vocab#label>
+              "urbanRural" .
+
+<http://education.data.gov.uk/def/school/reasonEstablishmentClosed>
+      <http://purl.org/linked-data/api/vocab#label>
+              "reasonEstablishmentClosed" .
+
+<http://education.data.gov.uk/def/school/dateofLastSISVisit>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#date> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "dateofLastSISVisit" .
+
+<http://services.data.gov.uk/education/api#schoolsSecondary>
+      a       <http://purl.org/linked-data/api/vocab#ListEndpoint> ;
+      <http://purl.org/linked-data/api/vocab#defaultViewer>
+              <http://services.data.gov.uk/education/api#viewerShort> ;
+      <http://purl.org/linked-data/api/vocab#selector>
+              <http://services.data.gov.uk/education/api#schoolsSecondarySelector> ;
+      <http://purl.org/linked-data/api/vocab#uriTemplate>
+              "/education/schools/secondary" .
+
+<http://education.data.gov.uk/def/school/girls12>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "girls12" .
+
+<http://education.data.gov.uk/def/school/girls4c>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "girls4c" .
+
+<http://education.data.gov.uk/def/school/federation>
+      <http://purl.org/linked-data/api/vocab#label>
+              "federation" .
+
+<http://education.data.gov.uk/def/school/School>
+      <http://purl.org/linked-data/api/vocab#label>
+              "School" .
+
+<http://education.data.gov.uk/def/school/numberOfBoys>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "numberOfBoys" .
+
+<http://education.data.gov.uk/def/school/charity>
+      <http://purl.org/linked-data/api/vocab#label>
+              "charity" .
+
+<http://education.data.gov.uk/def/school/IndependentSchoolType_Arts>
+      <http://purl.org/linked-data/api/vocab#label>
+              "IndependentSchoolType_Arts" .
+
+<http://education.data.gov.uk/def/school/religiousCharacter>
+      <http://purl.org/linked-data/api/vocab#label>
+              "religiousCharacter" .
+
+<http://education.data.gov.uk/def/school/diocese>
+      <http://purl.org/linked-data/api/vocab#label>
+              "diocese" .
+
+<http://services.data.gov.uk/education/api#schoolsPrimarySelector>
+      a       <http://purl.org/linked-data/api/vocab#Selector> ;
+      <http://purl.org/linked-data/api/vocab#filter>
+              "type=School&name-phaseOfEducation=Primary" .
+
+<http://education.data.gov.uk/def/school/TypeOfEstablishment_Offshore_Schools>
+      <http://purl.org/linked-data/api/vocab#label>
+              "Type_Offshore_Schools" .
+
+<http://education.data.gov.uk/def/school/TypeOfEstablishment_Non-Maintained_Special_School>
+      <http://purl.org/linked-data/api/vocab#label>
+              "Type_Non-Maintained_Special_School" .
+
+<http://education.data.gov.uk/def/school/MSOA>
+      <http://purl.org/linked-data/api/vocab#label>
+              "MSOA" .
+
+<http://education.data.gov.uk/def/school/Diocese>
+      <http://purl.org/linked-data/api/vocab#label>
+              "Diocese" .
+
+<http://education.data.gov.uk/def/school/earlyExcellence>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#boolean> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "earlyExcellence" .
+
+<http://education.data.gov.uk/def/school/girls4b>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "girls4b" .
+
+<http://education.data.gov.uk/def/school/actionWEL>
+      <http://purl.org/linked-data/api/vocab#label>
+              "actionWEL" .
+
+<http://education.data.gov.uk/def/school/girls13>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "girls13" .
+
+<http://education.data.gov.uk/def/school/trustSchool>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#boolean> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "trustSchool" .
+
+<http://education.data.gov.uk/def/school/numberOfGirls>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "numberOfGirls" .
+
+<http://education.data.gov.uk/def/school/girls4a>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "girls4a" .
+
+<http://services.data.gov.uk/education/api#schoolsSecondarySelector>
+      a       <http://purl.org/linked-data/api/vocab#Selector> ;
+      <http://purl.org/linked-data/api/vocab#filter>
+              "type=School&name-phaseOfEducation=Secondary" .
+
+<http://education.data.gov.uk/def/school/schoolCapacity>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "schoolCapacity" .
+
+<http://education.data.gov.uk/def/school/TypeOfEstablishment_Academies>
+      <http://purl.org/linked-data/api/vocab#label>
+              "Type_Academies" .
+
+<http://education.data.gov.uk/def/school/SENNoStat>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "SENNoStat" .
+
+<http://education.data.gov.uk/def/school/EYGovernmentFundedChildren>
+      a       owl:DatatypeProperty ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#int> ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "EYGovernmentFundedChildren" .
+
+<http://purl.org/linked-data/api/vocab#definition>
+      a       rdf:Property ;
+      <http://purl.org/linked-data/api/vocab#label>
+              "definition" .
