@@ -2,8 +2,8 @@ package main
 
 import "fmt"
 import "testing"
-import "code.google.com/p/project/trigger/rdf/smallmemgraph"
-import "code.google.com/p/project/trigger/rdf"
+import "project/trigger/github.com/ehedgehog/griffin/project/trigger/rdf/smallmemgraph"
+import "project/trigger/github.com/ehedgehog/griffin/project/trigger/rdf"
 
 func TestSomethingOrOther(t *testing.T) {
 	g := smallmemgraph.NewSmallMemGraph()

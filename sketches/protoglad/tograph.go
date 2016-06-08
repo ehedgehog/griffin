@@ -3,8 +3,8 @@ package main
 import "strconv"
 import "fmt"
 
-import "code.google.com/p/project/trigger/rdf"
-import "code.google.com/p/project/trigger/turtle"
+import "project/trigger/github.com/ehedgehog/griffin/project/trigger/rdf"
+import "project/trigger/github.com/ehedgehog/griffin/project/trigger/turtle"
 
 type ToGraph struct {
 	g          rdf.Graph

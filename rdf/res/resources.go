@@ -1,6 +1,6 @@
 package res
 
-import "code.google.com/p/project/trigger/rdf"
+import "project/trigger/github.com/ehedgehog/griffin/project/trigger/rdf"
 
 type Resource struct {
 	graph rdf.Graph

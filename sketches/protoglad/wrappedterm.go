@@ -4,7 +4,7 @@ import (
 	"sort"
 	"strings"
 
-	"code.google.com/p/project/trigger/rdf"
+	"project/trigger/github.com/ehedgehog/griffin/project/trigger/rdf"
 )
 
 type WrappedTerm struct {

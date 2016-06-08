@@ -49,7 +49,7 @@ func writeConsts(g rdf.Graph) {
 	for term := range seen { seenArray[index] = term; index += 1 } 
 	sort.Sort(sortable(seenArray))
 	fmt.Printf("package %s\n", *packageName )
-	fmt.Println( `import "code.google.com/p/project/trigger/rdf"` )
+	fmt.Println( `import "github.com/ehedgehog/griffin/rdf"` )
 	fmt.Printf( `const NS = "%s"` + "\n", ns )
 	for _, term := range seenArray {
 		leafName := term.Spelling()[len(ns):]

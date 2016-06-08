@@ -3,7 +3,7 @@ package turtle
 import "testing"
 import "strconv"
 import "fmt"
-import "code.google.com/p/project/trigger/rdf"
+import "project/trigger/github.com/ehedgehog/griffin/project/trigger/rdf"
 
 // TODO
 // names, variables

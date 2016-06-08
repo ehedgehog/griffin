@@ -1,6 +1,6 @@
 package smallmemgraph
 
-import "code.google.com/p/project/trigger/rdf"
+import "project/trigger/github.com/ehedgehog/griffin/project/trigger/rdf"
 import "testing"
 
 func TestSomething(t *testing.T) {

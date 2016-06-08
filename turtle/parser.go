@@ -6,7 +6,7 @@ package turtle
 //
 // decent error messages (incl line/col number)
 
-import "code.google.com/p/project/trigger/rdf"
+import "github.com/ehedgehog/griffin/rdf"
 import "fmt"
 import "strings"
 import "io"

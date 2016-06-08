@@ -1,6 +1,6 @@
 package main
 
-import "code.google.com/p/project/trigger/rdf"
+import "project/trigger/github.com/ehedgehog/griffin/project/trigger/rdf"
 
 func SubjectsWithProperty(g rdf.Graph, P, O rdf.Term) []rdf.Term {
 	terms := []rdf.Term{}

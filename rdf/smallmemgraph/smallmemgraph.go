@@ -1,6 +1,6 @@
 package smallmemgraph
 
-import "code.google.com/p/project/trigger/rdf"
+import "github.com/ehedgehog/griffin/rdf"
 
 type SmallMemGraph map[rdf.Triple]struct{}
 
