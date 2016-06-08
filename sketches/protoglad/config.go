@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-import "project/trigger/github.com/ehedgehog/griffin/project/trigger/rdf"
+import "github.com/ehedgehog/griffin/rdf"
 
 type Config struct {
 	ShortnameToTerm map[string]rdf.Term

@@ -5,10 +5,16 @@ import (
 	"fmt"
 	"io"
 	"net/http"
-//	"os"
+	"os"
+	"io/ioutil"
+	
 	"strings"
 	"text/template"
 	"time"
+
+	"github.com/ehedgehog/griffin/graphs"
+	"github.com/ehedgehog/griffin/turtle"
+	"github.com/ehedgehog/griffin/rdf/smallmemgraph"
 )
 
 func HelloServer(c http.ResponseWriter, req *http.Request) {
@@ -56,6 +62,11 @@ func SheetServer(c http.ResponseWriter, req *http.Request) {
 }
 
 func main() {
+	bytes, _ := ioutil.ReadAll(os.Stdin)
+	contents := string(bytes)
+	g := smallmemgraph.NewSmallMemGraph()
+	turtle.ParseFromString( contents, &graphs.ToGraph{g, map[string]string{}, 1000} )
+	//
 	fmt.Println("cantrip nebula")
 	http.Handle("/", http.HandlerFunc(HelloServer))
 	http.Handle("/sheet", http.HandlerFunc(SheetServer))
@@ -65,19 +76,3 @@ func main() {
 	}
 }
 
-type Node interface {
-	Spelling() string
-	Language() string
-	Type() Node
-	Kind() Class
-}
-
-type Class int
-
-const (
-	URI Class = iota
-	Blank
-	Literal
-	Symbol
-	Variable
-)

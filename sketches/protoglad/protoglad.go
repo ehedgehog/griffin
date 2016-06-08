@@ -14,9 +14,9 @@ import (
 	"github.com/gorilla/mux"
 )
 
-import "project/trigger/github.com/ehedgehog/griffin/project/trigger/rdf"
-import "project/trigger/github.com/ehedgehog/griffin/project/trigger/rdf/smallmemgraph"
-import "project/trigger/github.com/ehedgehog/griffin/project/trigger/turtle"
+import "github.com/ehedgehog/griffin/rdf"
+import "github.com/ehedgehog/griffin/rdf/smallmemgraph"
+import "github.com/ehedgehog/griffin/turtle"
 
 const root = "/home/chris/Server/files"
 
