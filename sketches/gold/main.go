@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"os"
 	"io/ioutil"
-	
+
 	"strings"
 	"text/template"
 	"time"
@@ -17,6 +17,8 @@ import (
 	"github.com/ehedgehog/griffin/turtle"
 	"github.com/ehedgehog/griffin/rdf/smallmemgraph"
 )
+
+//go:generate ontoconst < $GOPATH/lda-vocab.ttl -package api -namespace "http://purl.org/linked-data/api/vocab#"
 
 func HelloServer(c http.ResponseWriter, req *http.Request) {
 	fmt.Println("you rang, m'lord?", req.RequestURI)
