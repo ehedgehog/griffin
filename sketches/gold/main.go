@@ -12,6 +12,7 @@ import (
 	"text/template"
 	"time"
 
+	"github.com/ehedgehog/griffin/rdf"
 	"github.com/ehedgehog/griffin/graphs"
 	"github.com/ehedgehog/griffin/turtle"
 	"github.com/ehedgehog/griffin/rdf/smallmemgraph"
@@ -62,17 +63,40 @@ func SheetServer(c http.ResponseWriter, req *http.Request) {
 }
 
 func main() {
+	fmt.Println("cantrip nebula")
 	bytes, _ := ioutil.ReadAll(os.Stdin)
 	contents := string(bytes)
 	g := smallmemgraph.NewSmallMemGraph()
 	turtle.ParseFromString( contents, &graphs.ToGraph{g, map[string]string{}, 1000} )
 	//
-	fmt.Println("cantrip nebula")
+	analysis(g)
+	//
 	http.Handle("/", http.HandlerFunc(HelloServer))
 	http.Handle("/sheet", http.HandlerFunc(SheetServer))
 	err := http.ListenAndServe(":28059", nil)
 	if err != nil {
 		panic(err)
+	}
+}
+
+const API_NS = "http://purl.org/linked-data/api/vocab#"
+
+var API_API = rdf.AsIRI(API_NS + "API")
+var API_endpoint = rdf.AsIRI(API_NS + "endpoint")
+var API_uriTemplate = rdf.AsIRI(API_NS + "uriTemplate")
+
+func analysis(g rdf.Graph) {
+	apis := graphs.SubjectsWithProperty(g, rdf.Type, API_API)
+	for _, api := range apis {
+		fmt.Println("API:", api)
+		endpoints := graphs.ObjectsOf(g, api, API_endpoint)
+		for _, endpoint := range endpoints {
+			fmt.Println("  endpoint:", endpoint)
+			uriTemplates := graphs.ObjectsOf(g, endpoint, API_uriTemplate)
+			for _, ut := range uriTemplates {
+				fmt.Println("    ", ut)
+			}
+		}
 	}
 }
 
