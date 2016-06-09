@@ -6,6 +6,7 @@ import "github.com/ehedgehog/griffin/turtle"
 
 import "fmt"
 import "os"
+import "io"
 import "io/ioutil"
 import "strconv"
 import "flag"
@@ -36,7 +37,7 @@ func (tg *ToGraph) Report(message string, where turtle.Location) {
 	fmt.Printf( "! %s %v\n", message, where );
 }
 
-func writeConsts(g rdf.Graph) {
+func writeConsts(w io.Writer, g rdf.Graph) {
 	ns := *namespace
 	seen := map[rdf.Term]bool{}
 	g.FindAll( rdf.EVERY,
@@ -48,21 +49,21 @@ func writeConsts(g rdf.Graph) {
 	index := 0
 	for term := range seen { seenArray[index] = term; index += 1 } 
 	sort.Sort(sortable(seenArray))
-	fmt.Printf("package %s\n", *packageName )
-	fmt.Println( `import "github.com/ehedgehog/griffin/rdf"` )
-	fmt.Printf( `const NS = "%s"` + "\n", ns )
+	fmt.Fprintf(w, "package %s\n", *packageName )
+	fmt.Fprintln(w, `import "github.com/ehedgehog/griffin/rdf"` )
+	fmt.Fprintf(w, `const NS = "%s"` + "\n", ns )
 	for _, term := range seenArray {
 		leafName := term.Spelling()[len(ns):]
 		prefix, goName := toGo( leafName )
-		comments( term, g )
-		fmt.Printf( `const %s_%s = rdf.IRI(NS + "%s"` + ")\n", prefix, goName, leafName )
+		comments(w, term, g )
+		fmt.Fprintf(w, `const %s_%s = rdf.IRI(NS + "%s"` + ")\n", prefix, goName, leafName )
 	}
 }
 
-func comments( term rdf.Term, g rdf.Graph ) {
-	fmt.Println()
+func comments(out io.Writer, term rdf.Term, g rdf.Graph ) {
+	fmt.Fprintln(out)
 	for _, l := range Labels(term, g) {
-		fmt.Println( "//", l )
+		fmt.Fprintln(out, "//", l )
 	}
 }
 
@@ -98,12 +99,25 @@ func toGo(leafName string) (prefix, goName string) {
 var namespace = flag.String("namespace", "", "namespace to use")
 var packageName = flag.String("package", "ontoconst", "package to generate into")
 
+var ontfile = flag.String("from", "", "name of ontology file")
+var gofile = flag.String("to", "", "file to generate")
+
 func main() {
 	flag.Parse()
-	bytes, _ := ioutil.ReadAll(os.Stdin)
+	file, err := os.Open(*ontfile)
+	if err != nil {
+		panic("could not open " + *ontfile)
+	}
+
+	out, err := os.Create(*gofile)
+	if err != nil {
+		panic("could not create " + *gofile)
+	}
+
+	bytes, _ := ioutil.ReadAll(file)
 	contents := string(bytes)
 	g := smallmemgraph.NewSmallMemGraph()
 	turtle.ParseFromString( contents, &ToGraph{g, map[string]string{}, 1000} )
-	writeConsts( g )
+	writeConsts(out, g)
 }
 

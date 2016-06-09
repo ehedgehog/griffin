@@ -16,9 +16,9 @@ import (
 	"github.com/ehedgehog/griffin/graphs"
 	"github.com/ehedgehog/griffin/turtle"
 	"github.com/ehedgehog/griffin/rdf/smallmemgraph"
-)
 
-//go:generate ontoconst < $GOPATH/lda-vocab.ttl -package api -namespace "http://purl.org/linked-data/api/vocab#"
+	"github.com/ehedgehog/griffin/vocabs/lda"
+)
 
 func HelloServer(c http.ResponseWriter, req *http.Request) {
 	fmt.Println("you rang, m'lord?", req.RequestURI)
@@ -81,11 +81,11 @@ func main() {
 	}
 }
 
-const API_NS = "http://purl.org/linked-data/api/vocab#"
+const API_NS = lda.NS
 
-var API_API = rdf.AsIRI(API_NS + "API")
-var API_endpoint = rdf.AsIRI(API_NS + "endpoint")
-var API_uriTemplate = rdf.AsIRI(API_NS + "uriTemplate")
+var API_API = lda.C_API
+var API_endpoint = lda.P_endpoint
+var API_uriTemplate = lda.P_uriTemplate
 
 func analysis(g rdf.Graph) {
 	apis := graphs.SubjectsWithProperty(g, rdf.Type, API_API)
